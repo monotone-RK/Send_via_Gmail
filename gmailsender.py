@@ -46,7 +46,7 @@ BODY = """
           body
               """
 
-#** Encode                                                                   **/
+#** encode                                                                   **/
 #******************************************************************************/  
 orig_enc = "utf-8"
 to_enc = "to encode"
@@ -72,7 +72,7 @@ def send_via_gmail(from_addr, to_addr, msg):
     s.sendmail(from_addr, [to_addr], msg.as_string())
     s.close()
 
-#** Process                                                                  **/
+#** process                                                                  **/
 #******************************************************************************/  
 if options.showversion:
     showVersion()
