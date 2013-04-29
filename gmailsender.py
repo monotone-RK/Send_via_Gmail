@@ -81,6 +81,9 @@ if options.showversion:
 if len(args) > 1:
     print "## Error! The number of argument is wrong."
     sys.exit()
+elif len(args) == 1 and not options.loop:
+    print "## Error! The argument is not available."
+    sys.exit()
 
 if __name__ == "__main__":
     from_addr = FROM
