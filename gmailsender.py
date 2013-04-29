@@ -78,11 +78,8 @@ if options.showversion:
     showVersion()
     sys.exit()
 
-if len(args) > 1:
-    print "## Error! The number of argument is wrong."
-    sys.exit()
-elif len(args) == 1 and not options.loop:
-    print "## Error! The argument is not available."
+if len(args) != 0:
+    print "## Error! Arguments are not available."
     sys.exit()
 
 if __name__ == "__main__":
@@ -131,5 +128,5 @@ if __name__ == "__main__":
                     print "e:" + str(e)
             time.sleep(10)
     finally:
-        print "Stop sending message"
+        print "This program halts"
         sys.exit()
