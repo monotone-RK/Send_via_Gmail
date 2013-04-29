@@ -114,10 +114,10 @@ if __name__ == "__main__":
                         send_via_gmail(from_addr, addrs[to_addr], msg)
                         print "send message to", to_addr
                         print
-                    last_sent = datetime.datetime.now().hour
                     if not options.loop:
                         print "Finish to send message"
                         sys.exit()
+                    last_sent = datetime.datetime.now().hour
                     send_cnt += 1
                     print "=" * 30
                 except Exception as e:
