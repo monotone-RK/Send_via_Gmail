@@ -1,6 +1,6 @@
 Send_via_Gmail
 ==============
-Python cript that send e-mails via Gmail. (Python 2.x, not Python 3)
+Python script that send e-mails via Gmail. (Python 2.x, not Python 3)
 
 People who validate 2-Step verification have to issue application-specific 
 passwords. 
