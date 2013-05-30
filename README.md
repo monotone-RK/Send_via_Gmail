@@ -1,16 +1,18 @@
 Send_via_Gmail
 ==============
-Gmailを使ってメールを送るPythonスクリプトです．python 2系対象です．
+Python Script that send e-mails via Gmail. (Python 2.x, not Python 3)
 
-Gmail2段階認証を有効にしている方は，アプリケーション固有のバスワード
-を発行する必要があります．
+People who validate 2-Step verification have to issue application-specific 
+passwords. 
+
 
 Setup
 ---------------------------------------
- 1. python 2系をインストールしてください
- 2. あなたのgmailアドレス，パスワード(FROM)を設定して下さい
- 3. 送信先のアドレス(TO)を入力して下さい
- 4. メール件名，本文に使用したい文字コード(to_enc)を入力してください．ISO-2022-JPだと日本語対応になります．
+ 1. Install python (version 2.x, more than 2.6)
+ 2. Input your gmail address(FROM) and password
+ 3. Input adresses(TO) you e-mail
+ 4. Set encode rule that you would like to use in Subject and Body. 
+    (e.g. ISO-2022-JP handles Japanese.) 
 
 ###Usage
     python gmailsender.py [option]
